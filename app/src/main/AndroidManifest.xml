@@ -13,7 +13,12 @@
         android:theme="@style/Theme.MobileCoffee"
         tools:targetApi="31">
 
-        <!-- 🚀 Dashboard is now the launcher activity -->
+        <!-- Product Details Activity -->
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:exported="true" />  <!-- Set exported to true if you want this to be accessed from other apps -->
+
+        <!-- Dashboard Activity (Launcher Activity) -->
         <activity
             android:name=".DashboardActivity"
             android:exported="true">
@@ -23,10 +28,11 @@
             </intent-filter>
         </activity>
 
-        <!-- MainActivity still exists, but not launching first -->
+        <!-- MainActivity (Not launched first anymore, but still exists) -->
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false" /> <!-- MainActivity still exists but is not launched first -->
+
     </application>
 
 </manifest>
