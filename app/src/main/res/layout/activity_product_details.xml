@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Coffee Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/coffee1"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_shop_image"
+            android:clipToOutline="true" />
+
+        <!-- Title, Rating, and Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Cappuccino"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="With Oat Milk"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:text="★ 4.5"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="$3.80"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Add Button -->
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_add"
+            android:background="@drawable/rounded_button"
+            android:padding="8dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Size -->
+        <TextView
+            android:text="Size"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/sizeButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/buttonS"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="S"
+                android:textColor="#F1BA88"
+                android:background="@drawable/size_button_bg"
+                android:textStyle="bold"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/buttonM"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="M"
+                android:textColor="#F1BA88"
+                android:background="@drawable/size_button_bg"
+                android:textStyle="bold"
+                android:layout_margin="8dp" />
+
+            <Button
+                android:id="@+id/buttonL"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="L"
+                android:textColor="#F1BA88"
+                android:background="@drawable/size_button_bg"
+                android:textStyle="bold"
+                android:layout_margin="8dp" />
+
+        </LinearLayout>
+
+
+        <!-- Description -->
+        <TextView
+            android:text="Description"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:text="Enjoy a perfectly brewed cappuccino made with creamy oat milk. A favorite for anyone seeking a dairy-free delight."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+        <!-- Place Order Button -->
+        <Button
+            android:id="@+id/placeOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/place_order_button_bg"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>
