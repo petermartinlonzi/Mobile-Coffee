@@ -4,16 +4,18 @@
     <!-- Pressed state -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="#644A07" /> <!-- Darker shade on press -->
-            <corners android:radius="20dp" />
+            <solid android:color="#F1BA88" />
+            <stroke android:width="2dp" android:color="#F1BA88" />
+            <corners android:radius="8dp" />
         </shape>
     </item>
 
     <!-- Default state -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#A76545" /> <!-- This is your main color -->
-            <corners android:radius="20dp" />
+            <solid android:color="#FFFFFF" />
+            <stroke android:width="2dp" android:color="#F1BA88" />
+            <corners android:radius="8dp" />
         </shape>
     </item>
 

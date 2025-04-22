@@ -12,27 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileCoffee"
         tools:targetApi="31">
-
-        <!-- Product Details Activity -->
         <activity
             android:name=".ProductDetailsActivity"
-            android:exported="true" />  <!-- Set exported to true if you want this to be accessed from other apps -->
-
-        <!-- Dashboard Activity (Launcher Activity) -->
+            android:exported="false" />
+        <!-- 🚀 Dashboard is now the launcher activity -->
         <activity
             android:name=".DashboardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MainActivity (Not launched first anymore, but still exists) -->
+        </activity> <!-- MainActivity still exists, but not launching first -->
         <activity
             android:name=".MainActivity"
-            android:exported="false" /> <!-- MainActivity still exists but is not launched first -->
-
+            android:exported="false" />
     </application>
 
 </manifest>

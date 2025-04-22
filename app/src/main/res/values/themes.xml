@@ -1,8 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MobileCoffee" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Set window background color -->
+        <item name="android:windowBackground">@color/background_primary</item>
+        <!-- Optional: Customize primary colors if needed -->
+        <!-- <item name="colorPrimary">@color/your_primary_color</item> -->
+        <!-- <item name="colorSecondary">@color/your_secondary_color</item> -->
     </style>
 
     <style name="Theme.MobileCoffee" parent="Base.Theme.MobileCoffee" />
