@@ -145,7 +145,7 @@
             android:layout_marginBottom="24dp" />
         <!-- Place Order Button -->
         <Button
-            android:id="@+id/buttonPlaceOrder"
+            android:id="@+id/placeOrderBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Place Order"
